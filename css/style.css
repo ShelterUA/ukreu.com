@@ -1,0 +1,37 @@
+h3 {
+    background: #f9f9f9;
+    padding: 10px 15px;
+    margin: 30px 0px 10px;
+}
+
+.poland-block table {
+    width: 70%;
+    margin: 0px auto;
+}
+
+table .green th,
+table .green td {
+    background: #c8f5cf;
+}
+
+table .yellow th,
+table .yellow td {
+    background: #f4f5c8;
+}
+
+.bottom-block {
+    margin-top: 50px;
+}
+
+.select-language {
+    display: inline-block;
+}
+.select-language li {
+    list-style: none;
+}
+.select-language li img {
+    width: 36px;
+}
+.select-language li a {
+    padding: 0px;
+}
