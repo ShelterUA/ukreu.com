@@ -1,22 +1,107 @@
-h3 {
+
+.main-header {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.country-block h3 {
     background: #f9f9f9;
     padding: 10px 15px;
     margin: 30px 0px 10px;
 }
 
-.poland-block table {
-    width: 70%;
-    margin: 0px auto;
+.date span {
+    padding: 0px 30px;
 }
 
-table .green th,
-table .green td {
+.nav li {
+    padding: 0px 20px;
+}
+
+.nav a {
+    font-size: 1.2rem;
+    padding-right: 1.3rem!important;
+    padding-left: 1.3rem!important;
+}
+
+.nav a:hover {
+    background: #ededed;
+}
+
+.logo img {
+    width: 120px;
+    height: 70px;
+    box-shadow: 1px 1px 2px #888;
+    -moz-box-shadow: 1px 1px 2px #888;
+    -webkit-box-shadow: 1px 1px 2px #888;
+}
+
+.table {
+    display: table;
+    width: 70%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.table .tbody {
+    border-top: 2px solid #000;
+}
+
+.table .row {
+    display: table-row;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.table .row .cell:first-child {
+    border-right: 1px solid #e9e9e9;
+}
+
+.table .cell:first-child {
+    width: 34%;
+}
+.table .cell:last-child {
+    width: 66%;
+}
+
+.table .cell {
+    display: table-cell;
+}
+
+.table .cell.text-start {
+    font-weight: bold;
+}
+
+.table .green {
     background: #c8f5cf;
 }
 
-table .yellow th,
-table .yellow td {
+.table .yellow {
     background: #f4f5c8;
+}
+
+.mail {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .table {
+        width: 100%;
+        display: block;
+    }
+    .table .row {
+        width: 100%;
+        display: block;
+        margin: 0px;
+    }
+    .table .cell,
+    .table .cell:first-child,
+    .table .cell:last-child {
+        width: 100%;
+        display: block;
+        word-break: break-word;
+    }
 }
 
 .bottom-block {
@@ -35,3 +120,23 @@ table .yellow td {
 .select-language li a {
     padding: 0px;
 }
+
+
+
+/*
+.poland-block table {
+    width: 70%;
+    margin: 0px auto;
+}
+table .green th,
+table .green td {
+    background: #c8f5cf;
+}
+
+table .yellow th,
+table .yellow td {
+    background: #f4f5c8;
+}
+
+
+*/
