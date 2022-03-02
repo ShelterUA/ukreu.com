@@ -1,13 +1,95 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf);
+    font-weight: bold;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.03);
+    font-family: Roboto;
+    font-size: 1.1rem;
+}
 
 .main-header {
     text-align: center;
     margin: 30px 0px;
 }
 
+.white-block {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-white-rgb),var(--bs-bg-opacity))!important;
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: 0 .5em 1.5em rgba(0, 0, 0, .1), 0 .125em .5em rgba(0, 0, 0, .15);
+    margin: 30px auto;
+    padding: 0px 0px 20px 0px;
+}
+
 .country-block h3 {
     background: #f9f9f9;
     padding: 10px 15px;
-    margin: 30px 0px 10px;
+    margin: 0px;
+}
+
+.mobile-menu-btn {
+    font-size: 41px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu {
+    width: 280px;
+    padding: 2rem 1rem;
+    height: 100%;
+    display: inline-block;
+    position: fixed;
+    top: 0px;
+    left: -320px;
+    box-shadow: 3px 3px 5px #ccc;
+    -moz-box-shadow: 3px 3px 5px #ccc;
+    -webkit-box-shadow: 3px 3px 5px #ccc;
+}
+
+.mobile-logo {
+    margin-left: 22px;
+}
+
+.mobile-logo span {
+    margin-left: 16px;
+}
+
+.mobile-logo img {
+    width: 64px;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    box-shadow: 1px 1px 2px #888;
+    -moz-box-shadow: 1px 1px 2px #888;
+    -webkit-box-shadow: 1px 1px 2px #888;
+}
+
+.mobile-menu .nav img {
+    width: 32px;
+}
+
+.mobile-menu .nav span {
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.mobile-menu-close {
+    position: absolute;
+    top: 0px;
+    right: -39px;
+    cursor: pointer;
+    font-size: 32px;
+    color: #707070;
+    display: none;
+    opacity: 0;
 }
 
 .date span {
@@ -29,8 +111,10 @@
 }
 
 .logo img {
-    width: 120px;
-    height: 70px;
+    width: 106px;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
     box-shadow: 1px 1px 2px #888;
     -moz-box-shadow: 1px 1px 2px #888;
     -webkit-box-shadow: 1px 1px 2px #888;
@@ -66,6 +150,7 @@
 
 .table .cell {
     display: table-cell;
+    padding: 0.5rem 1rem;
 }
 
 .table .cell.text-start {
@@ -86,6 +171,18 @@
 
 
 @media screen and (max-width: 768px) {
+    header.d-flex {
+        display: block!important;
+        overflow: hidden;
+        clear: both;
+        position: relative;
+    }
+    .logo {
+        float: left;
+    }
+    header .main-nav {
+        display: none;
+    }
     .table {
         width: 100%;
         display: block;
@@ -101,6 +198,17 @@
         width: 100%;
         display: block;
         word-break: break-word;
+    }
+    .select-language-block {
+        position: absolute;
+        margin: 50%;
+        left: -18px;
+    }
+    .mobile-menu-btn {
+        display: block;
+        position: absolute;
+        right: 16px;
+        top: 26px;
     }
 }
 
@@ -120,7 +228,6 @@
 .select-language li a {
     padding: 0px;
 }
-
 
 
 /*

@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Помощь украинцам</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="img/ua.png">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <div class="container">
@@ -15,13 +18,47 @@
             <img src="img/logo.jpeg" alt="" />
         </a>
 
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <ul class="nav main-nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
             <li><a href="#poland" class="nav-link px-2 link-dark">Польща</a></li>
             <li><a href="#spain" class="nav-link px-2 link-dark">Іспанія</a></li>
             <li><a href="#germany" class="nav-link px-2 link-dark">Германія</a></li>
         </ul>
+        <div class="mobile-menu-btn">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="mobile-menu d-flex flex-column flex-shrink-0 bg-light" style="width: 280px;">
+            <a href="index_ru.html" class="mobile-logo d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <img src="img/logo.jpeg" alt="" />
+                <span class="fs-6">Помощь украинцам</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#poland" class="nav-link link-dark" aria-current="page">
+                        <img src="img/pl.png" alt="" />
+                        <span>Польша</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#spain" class="nav-link link-dark">
+                        <img src="img/es.png" alt="" />
+                        <span>Испания</span>
 
-        <div class="col-md-3 text-end">
+                    </a>
+                </li>
+                <li>
+                    <a href="#germany" class="nav-link link-dark">
+                        <img src="img/de.png" alt="" />
+                        <span>Германия</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="mobile-menu-close">
+                <i class="bi bi-x-circle-fill"></i>
+            </div>
+        </div>
+
+        <div class="col-md-3 text-end select-language-block">
             <div class="select-language">
                 <li>
                     <a href="index.html" class="active">
@@ -37,7 +74,7 @@
     <h3 class="main-header">Помощь украинцам по вопросам беженства</h3>
 </div>
 
-<div class="container">
+<div class="container white-block">
     <div class="table-responsive">
         <div class="table text-start">
             <div class="tbody">
@@ -64,8 +101,8 @@
     <span>По вопросам дополнительной информации</span>
 </div>
 
-<div class="container country-block">
-    <div class="py-3 my-4">
+<div class="container country-block white-block">
+    <div>
         <a name="poland"></a>
         <h3>Польша</h3>
         <div class="date">
@@ -98,8 +135,8 @@
     </div>
 </div>
 
-<div class="container country-block">
-    <div class="py-3 my-4">
+<div class="container country-block white-block">
+    <div>
         <a name="spain"></a>
         <h3>Испания</h3>
         <div class="date">
@@ -149,8 +186,8 @@
     </div>
 </div>
 
-<div class="container country-block">
-    <div class="py-3 my-4">
+<div class="container country-block white-block">
+    <div>
         <a name="germany"></a>
         <h3>Германия</h3>
         <div class="date">
