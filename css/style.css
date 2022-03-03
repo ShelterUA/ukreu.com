@@ -146,6 +146,7 @@ body {
 }
 .table .cell:last-child {
     width: 66%;
+    word-break: break-word;
 }
 
 .table .cell {
@@ -170,7 +171,7 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     header.d-flex {
         display: block!important;
         overflow: hidden;
@@ -228,22 +229,3 @@ body {
 .select-language li a {
     padding: 0px;
 }
-
-
-/*
-.poland-block table {
-    width: 70%;
-    margin: 0px auto;
-}
-table .green th,
-table .green td {
-    background: #c8f5cf;
-}
-
-table .yellow th,
-table .yellow td {
-    background: #f4f5c8;
-}
-
-
-*/
