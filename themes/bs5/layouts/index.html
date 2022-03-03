@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="container p-3">
+    <div class="row">
+        <div class="col text-center"><h1>iTora chats Backup 2021/2022</h1></div>
+    </div>
+    <div class="row my-4">
+        <div class="col">
+            {{ .Site.Language.Lang }}
+            {{ $cnt := len (index .Site.Data .Site.Language.Lang) }}
+
+            {{ range $value:= (index .Site.Data .Site.Language.Lang) }}
+                {{ $value.country  }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
