@@ -146,6 +146,7 @@ body {
 }
 .table .cell:last-child {
     width: 66%;
+    word-break: break-word;
 }
 
 .table .cell {
@@ -169,8 +170,12 @@ body {
     text-align: center;
 }
 
+.container.mail p {
+    margin-bottom: 0rem;
+}
 
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 991px) {
     header.d-flex {
         display: block!important;
         overflow: hidden;
@@ -229,21 +234,6 @@ body {
     padding: 0px;
 }
 
-
-/*
-.poland-block table {
-    width: 70%;
-    margin: 0px auto;
+.select-language span {
+    text-decoration: line-through;
 }
-table .green th,
-table .green td {
-    background: #c8f5cf;
-}
-
-table .yellow th,
-table .yellow td {
-    background: #f4f5c8;
-}
-
-
-*/
