@@ -229,3 +229,7 @@ body {
 .select-language li a {
     padding: 0px;
 }
+
+.select-language span {
+    text-decoration: line-through;
+}
