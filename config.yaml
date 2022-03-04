@@ -1,17 +1,17 @@
 baseURL: 'https://ukreu.org/'
 languageCode: 'en-us'
 theme: 'bs5'
-params:
-  description: ""
 publishdir: 'docs'
 
 
 defaultContentLanguage: ua
 languages:
   ua:
-    title: 'Допомога українцям по питанням біженства'
+    title: 'Біженство українцям'
+    description: 'Допомога інформаційна українцям по питанням біженства'
     weight: 2
   ru:
-    title: 'Помощь украинцам по вопросам беженства'
+    title: 'Беженство украинцам'
+    description: 'Помощь украинцам по вопросам беженства'
     weight: 1
 
