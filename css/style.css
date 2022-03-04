@@ -158,13 +158,22 @@ body {
     background: #f4f5c8;
 }
 
-.mail {
+.mail,
+.telegram{
     text-align: center;
+    margin: 20px auto;
+    padding: 10px 0px;
 }
 
-.container.mail p {
+.container.mail p,
+.container.telegram p{
     margin-bottom: 0rem;
 }
+
+.container .telegram {
+    border-bottom: 1px solid #ececec;
+}
+
 @media screen and (max-width: 1250px) {
     .main-nav li {
         padding: 0px 10px;
