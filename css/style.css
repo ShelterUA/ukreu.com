@@ -197,7 +197,7 @@ body {
     }
     .select-language-block {
         position: absolute;
-        margin: 50%;
+        margin: 20px 50% 0px;
         left: -18px;
     }
     .mobile-menu-btn {
