@@ -120,6 +120,7 @@ body {
 
 .table .tbody {
     border-top: 2px solid #000;
+    display: table-row-group;
 }
 
 .table .row {
@@ -164,7 +165,14 @@ body {
 .container.mail p {
     margin-bottom: 0rem;
 }
-
+@media screen and (max-width: 1250px) {
+    .main-nav li {
+        padding: 0px 10px;
+    }
+    .footer-nav li{
+        padding: 0px 10px;
+    }
+}
 
 @media screen and (max-width: 991px) {
     header.d-flex {
@@ -187,6 +195,9 @@ body {
         width: 100%;
         display: block;
         margin: 0px;
+    }
+    .table .tbody {
+        display: block;
     }
     .table .cell,
     .table .cell:first-child,
