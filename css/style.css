@@ -196,7 +196,6 @@ body {
         word-break: break-word;
     }
     .select-language-block {
-        position: absolute;
         margin: 20px 50% 0px;
         left: -18px;
     }
