@@ -20,6 +20,14 @@ body {
     padding: 0px 0px 20px 0px;
 }
 
+.date {
+    text-align: left;
+}
+
+.text-block {
+    padding: 7px 0px;
+}
+
 .additional-block {
     padding: 10px 0px;
     text-align: center;
