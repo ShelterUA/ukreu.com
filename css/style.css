@@ -207,7 +207,7 @@ body {
     border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
     .main-nav li {
         padding: 0px 10px;
     }
@@ -216,7 +216,7 @@ body {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
     header.d-flex {
         display: block!important;
         overflow: hidden;
