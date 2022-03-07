@@ -1,13 +1,32 @@
 $(document).ready(function() {
-    $(".mobile-menu-btn").click(function() {
-        $(".mobile-menu").animate({"left" : "0px"}, 1000, function() {
-            $(".mobile-menu-close").css({"display" : "inline-block"}).animate({"opacity" : "1"}, 500);
-        });
+
+    let mobile_menu = $(".mobile-menu");
+    let mobile_menu_btn = $(".mobile-menu-btn");
+
+    mobile_menu_btn.click(function() {
+        if(!mobile_menu.hasClass("open")) {
+            mobile_menu.animate({"left" : "0px"}, 1000, function() {
+                $(this).addClass("open");
+            });
+        }
     });
-    $(".mobile-menu-close").click(function() {
-        $(".mobile-menu").animate({"left" : "-320px"}, 1000);
-        $(".mobile-menu-close").animate({"opacity" : "0"}, 500, function() {
-            $(this).css({"display" : "none"});
-        })
+    mobile_menu_btn.click(function() {
+        if(mobile_menu.hasClass("open")) {
+            mobile_menu.animate({"left": "-320px"}, 1000, function () {
+                $(this).removeClass("open");
+            });
+        }
     });
+
+    $(window).scroll(function() {
+        if($(window).scrollTop() >= 120) {
+            if(!mobile_menu_btn.hasClass("fixed")) {
+                mobile_menu_btn.addClass("fixed");
+            }
+        } else {
+            if(mobile_menu_btn.hasClass("fixed")) {
+                mobile_menu_btn.removeClass("fixed");
+            }
+        }
+    })
 });

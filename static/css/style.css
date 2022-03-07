@@ -20,6 +20,23 @@ body {
     padding: 0px 0px 20px 0px;
 }
 
+.date {
+    text-align: left;
+}
+
+.text-block {
+    padding: 7px 0px;
+}
+
+.additional-block {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.info-block {
+    font-size: 1rem;
+}
+
 .country-block h3 {
     background: #f9f9f9;
     padding: 10px 15px;
@@ -43,6 +60,7 @@ body {
     box-shadow: 3px 3px 5px #ccc;
     -moz-box-shadow: 3px 3px 5px #ccc;
     -webkit-box-shadow: 3px 3px 5px #ccc;
+    z-index: 1000;
 }
 
 .mobile-logo {
@@ -81,6 +99,21 @@ body {
     color: #707070;
     display: none;
     opacity: 0;
+}
+
+.mobile-menu-btn.fixed {
+    position: fixed;
+    background: #f5f5f5;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    right: 0px;
+    box-shadow: 2px 2px 5px #3c3c3c;
+    -moz-box-shadow: 2px 2px 5px #3c3c3c;
+    -webkit-box-shadow: 2px 2px 5px #3c3c3c;
+    padding-left: 5px;
+    z-index: 1000;
 }
 
 .date span {
@@ -174,7 +207,7 @@ body {
     border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1300px) {
     .main-nav li {
         padding: 0px 10px;
     }
@@ -183,7 +216,7 @@ body {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1200px) {
     header.d-flex {
         display: block!important;
         overflow: hidden;
