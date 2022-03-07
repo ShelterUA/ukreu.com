@@ -1,12 +1,3 @@
-@font-face {
-    font-family: Roboto;
-    src: url(../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
-}
-@font-face {
-    font-family: Roboto;
-    src: url(../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf);
-    font-weight: bold;
-}
 
 body {
     background-color: rgba(0, 0, 0, 0.03);
@@ -129,6 +120,7 @@ body {
 
 .table .tbody {
     border-top: 2px solid #000;
+    display: table-row-group;
 }
 
 .table .row {
@@ -166,14 +158,30 @@ body {
     background: #f4f5c8;
 }
 
-.mail {
+.mail,
+.telegram{
     text-align: center;
+    margin: 20px auto;
+    padding: 10px 0px;
 }
 
-.container.mail p {
+.container.mail p,
+.container.telegram p{
     margin-bottom: 0rem;
 }
 
+.container .telegram {
+    border-bottom: 1px solid #ececec;
+}
+
+@media screen and (max-width: 1250px) {
+    .main-nav li {
+        padding: 0px 10px;
+    }
+    .footer-nav li{
+        padding: 0px 10px;
+    }
+}
 
 @media screen and (max-width: 991px) {
     header.d-flex {
@@ -197,6 +205,9 @@ body {
         display: block;
         margin: 0px;
     }
+    .table .tbody {
+        display: block;
+    }
     .table .cell,
     .table .cell:first-child,
     .table .cell:last-child {
@@ -205,8 +216,7 @@ body {
         word-break: break-word;
     }
     .select-language-block {
-        position: absolute;
-        margin: 50%;
+        margin: 20px 50% 0px;
         left: -18px;
     }
     .mobile-menu-btn {

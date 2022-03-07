@@ -1,0 +1,61 @@
+{{ $title := .Site.Title }}
+
+<div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="index.html"
+           class="d-flex align-items-center col-md-1 mb-2 mb-md-0 text-dark text-decoration-none logo">
+            <img src="/img/logo.jpeg" alt=""/>
+        </a>
+
+        <ul class="nav main-nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            {{ range $key, $value:= (index .Site.Data .Site.Language.Lang) }}
+                 <li><a href="#{{ $key  }}" class="nav-link px-2 link-dark">{{ $value.country }}</a></li>
+            {{ end }}
+        </ul>
+        <div class="mobile-menu-btn">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <div class="mobile-menu d-flex flex-column flex-shrink-0 bg-light" style="width: 280px;">
+            <a href="index.html"
+               class="mobile-logo d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <img src="/img/logo.jpeg" alt=""/>
+                <span class="fs-6">{{ $title }}</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                {{ range $key, $value:= (index .Site.Data .Site.Language.Lang) }}
+                    <li class="nav-item">
+                        <a href="#{{ $key }}" class="nav-link link-dark" aria-current="page">
+                            <img src="{{ $key }}" alt=""/>
+                            <span>{{ $value.country }}</span>
+                        </a>
+                    </li>
+                {{ end }}
+            </ul>
+            <div class="mobile-menu-close">
+                <i class="bi bi-x-circle-fill"></i>
+            </div>
+        </div>
+
+        <div class="col-md-1 text-end select-language-block">
+            <div class="select-language">
+                <li>
+                    {{ if (eq .Site.Language.Lang "ru") }}
+                        <a href="/" class="active">
+                            <img src="../img/ua.png" />
+                        </a>
+                    {{ else }}
+                        <a href="/ru" class="active">
+                            <span>ру</span>
+                        </a>
+                    {{ end }}
+                </li>
+            </div>
+        </div>
+    </header>
+</div>
+
+<div class="container">
+    <h3 class="main-header">{{ $title }}</h3>
+</div>
