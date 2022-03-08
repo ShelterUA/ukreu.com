@@ -35,6 +35,26 @@ shure:
       - 'Міністерство освіти та науки.'
     links:
       - 'https://rspo.gov.pl'
+  - title: 'Пошук роботи.'
+    descriptions:
+      - 'Портал державних служб зайнятості.'
+    links:
+      - 'https://lang-psz.praca.gov.pl/uk/'
+  - title: ''
+    descriptions:
+      - 'Центральна база вакансій'
+    links:
+      - 'https://lang-psz.praca.gov.pl/uk/'
+  - title: ''
+    descriptions:
+      - 'Безкоштовні портали пошуку роботи:'
+    links:
+      - 'https://www.pracuj.pl/'
+      - 'https://www.jobs.pl/'
+      - 'https://www.olx.pl/'
+      - 'https://www.gumtree.pl/'
+      - 'https://www.gowork.pl/'
+      - 'https://www.aplikuj.pl/'
 tocheck:
   -
     title: 'Умови перебування в країні'
