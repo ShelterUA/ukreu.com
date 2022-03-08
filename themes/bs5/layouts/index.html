@@ -1,420 +1,170 @@
 {{ define "main" }}
 
-<div class="container white-block">
-    <div class="table-responsive">
-        <div class="table text-start">
-            <div class="tbody">
-                <div class="row green">
-                    <div class="cell text-start">{{ .Site.Params.Green.Title }}</div>
-                    <div class="cell">
-                        {{ range $value:= .Site.Params.Green.Descriptions }}
+    <div class="container white-block">
+        <div class="table-responsive">
+            <div class="table text-start">
+                <div class="tbody">
+                    <div class="row green">
+                        <div class="cell text-start">{{ .Site.Params.Green.Title }}</div>
+                        <div class="cell">
+                            {{ range $value:= .Site.Params.Green.Descriptions }}
+                                <p>{{ $value }}</p>
+                            {{ end }}
+                        </div>
+                    </div>
+                    <div class="row yellow">
+                        <div class="cell text-start">{{ .Site.Params.Yellow.Title }}</div>
+                        <div class="cell">
+                            {{ range $value:= .Site.Params.Yellow.Descriptions }}
                             <p>{{ $value }}</p>
-                        {{ end }}
-                    </div>
-                </div>
-                <div class="row yellow">
-                    <div class="cell text-start">{{ .Site.Params.Red.Title }}</div>
-                    <div class="cell">
-                        {{ range $value:= .Site.Params.Red.Descriptions }}
-                        <p>{{ $value }}</p>
-                        {{ end }}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container telegram">
-    <p>Ссылка на наш телеграм канал <a href="https://t.me/ukreucom" target="_blank">https://t.me/ukreucom</a></p>
-    <p>Здесь Вы найдете всю информацию об обновлениях на нашем сайте.</p>
-</div>
-
-<div class="container mail">
-    <p>Если вы обнаружили ошибку, или информация не полная - оставляйте свои комментарии по адресу <a href="mailto:ukreucom@gmail.com" target="_blank">ukreucom@gmail.com</a></p>
-    <p>Мы будем вносить изменения максимально оперативно, спасибо за помощь!</p>
-</div>
-
-<div class="container country-block white-block">
-    <div>
-        <a name="monitoring"></a>
-        <h3>Мониторинг очередей на границе</h3>
-        <div class="date">
-            <span>Дата актуализации: 04.03.2022</span>
-        </div>
-        <div class="table-responsive">
-            <div class="table text-start">
-                <div class="tbody">
-                    <div class="row green">
-                        <div class="cell text-start">Актуальная информация на границе</div>
-                        <div class="cell">
-                            <a href="https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vTmKNAxZn2cPpBqPHnRx9Hc_GPzfi7U92h05hkNuES6pA8l7IcbfdRELMkTBWGcBFoRkUdwlnfX889X/pubhtml?gid=0&single=true&fbclid=IwAR2D_XoJOOXrldZZBBn3MfTQkQUiQCdCqSUYdYuNF5orAAC2GB9EzqvYnnA" target="_blank">https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vTmKNAxZn2cPpBqPHnRx9Hc_GPzfi7U92h05hkNuES6pA8l7IcbfdRELMkTBWGcBFoRkUdwlnfX889X/pubhtml?gid=0&single=true&fbclid=IwAR2D_XoJOOXrldZZBBn3MfTQkQUiQCdCqSUYdYuNF5orAAC2GB9EzqvYnnA</a>
+                            {{ end }}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container country-block white-block">
-    <div>
-        <a name="info"></a>
-        <h3>Интерактивные карты помощи</h3>
-        <div class="date">
-            <span>Дата актуализации: 04.03.2022</span>
+
+    {{ if (eq .Site.Language.Lang "ua") }}
+        <div class="container additional-block white-block">
+            <div>
+                <div class="date">
+                    <span>{{.Site.Params.DateTitle}}: 05.03.2022</span>
+                </div>
+                <div class="text-block">
+                    <p>Європейська рада схвалила пропозицію Єврокомісії активувати Директиву про тимчасовий захист - українські біженці отримають у ЄС дозвіл на проживання, роботу та освіту. Очікуємо на роз'яснення.	</p>
+                </div>
+            </div>
         </div>
-        <div class="table-responsive">
-            <div class="table text-start">
-                <div class="tbody">
-                    <div class="row green">
-                        <div class="cell text-start">I can help</div>
-                        <div class="cell">
-                            <a href="https://icanhelp.host" target="_blank">https://icanhelp.host</a>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Mapa help</div>
-                        <div class="cell">
-                            <a href="https://mapahelp.me">https://mapahelp.me</a>
+
+        <div class="container telegram">
+            <p>Щоб отримувати інформацію про оновлення на нашому сайті</p>
+            <p>підписуйтесь на телеграм канал <a href="https://t.me/ukreucom" target="_blank">https://t.me/ukreucom</a></p>
+        </div>
+
+        <div class="container mail">
+            <p>Якщо ви знайшли помилку, або інформація не повна - залишайте свої коментарі за адресою <a href="mailto:ukreucom@gmail.com" target="_blank">ukreucom@gmail.com</a></p>
+            <p>Ми будемо вносити зміни максимально оперативно, дякуємо за допомогу!</p>
+        </div>
+    {{ else }}
+        <div class="container additional-block white-block">
+            <div>
+                <div class="date">
+                    <span>{{.Site.Params.DateTitle}}: 05.03.2022</span>
+                </div>
+                <div class="text-block">
+                    <p>Европейский совет одобрил предложение Еврокомиссии активировать Директиву о временной защите - украинские беженцы получат в ЕС вид на жительство, работу и образование. Ожидаем разъяснение.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container telegram">
+            <p>Чтобы получать информацию о обновлениях на нашем сайте</p>
+            <p>подписуйтесь на телеграм канал <a href="https://t.me/ukreucom" target="_blank">https://t.me/ukreucom</a></p>
+        </div>
+
+        <div class="container mail">
+            <p>Если вы обнаружили ошибку, или информация не полная - оставляйте свои комментарии по адресу <a href="mailto:ukreucom@gmail.com" target="_blank">ukreucom@gmail.com</a></p>
+            <p>Мы будем вносить изменения максимально оперативно, спасибо за помощь!</p>
+        </div>
+    {{ end }}
+
+
+
+    {{ range $key, $value:= (index .Site.Data .Site.Language.Lang).extras }}
+        <div class="container country-block white-block">
+            <div>
+                <a name="{{$key}}"></a>
+                <h3>{{ $value.title }}</h3>
+                <div class="date">
+                    <span>{{.Site.Params.DateTitle}}: {{$value.date}}</span>
+                </div>
+                <div class="table-responsive">
+                    <div class="table text-start">
+                        <div class="tbody">
+                            {{ range $row:= $value.shure }}
+                                <div class="row green">
+                                    <div class="cell text-start">{{$row.title}}</div>
+                                    <div class="cell">
+                                        {{ range $description:= $row.descriptions }}
+                                            <p>{{$description}}</p>
+                                        {{ end }}
+
+                                        {{ range $link:= $row.links }}
+                                            <a href="{{$link}}" target="_blank">{{$link}}</a>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            {{end}}
+                            {{ range $row:= $value.tocheck }}
+                                <div class="row yellow">
+                                    <div class="cell text-start">{{$row.title}}</div>
+                                    <div class="cell">
+                                        {{ range $description:= $row.descriptions }}
+                                        <p>{{$description}}</p>
+                                        {{ end }}
+
+                                        {{ range $link:= $row.links }}
+                                        <a href="{{$link}}" target="_blank">{{$link}}</a>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            {{end}}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    {{ end }}
 
-<div class="container country-block white-block">
-    <div>
-        <a name="poland"></a>
-        <h3>Польша</h3>
-        <div class="date">
-            <span>Дата актуализации: 02.03.2022</span>
-        </div>
-        <div class="table-responsive">
-            <div class="table text-start">
-                <div class="tbody">
-                    <div class="row green">
-                        <div class="cell text-start">Горячая линия для Беженцев</div>
-                        <div class="cell">+48 47 721 75 75</div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Официальная помощь от государства</div>
-                        <div class="cell">
-                            <a href="https://pomagamukrainie.gov.pl">https://pomagamukrainie.gov.pl</a>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Официальный государственный портал помощи беженцам</div>
-                        <div class="cell">
-                            <a href="http://www.ua.gov.pl" target="_blank">http://www.ua.gov.pl</a>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Список центров помощи беженцам</div>
-                        <div class="cell">
-                            <a href="https://www.gov.pl/web/mswia/informacja-dla-uchodzcow-z-ukrainy" target="_blank">https://www.gov.pl/web/mswia/informacja-dla-uchodzcow-z-ukrainy</a>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Часто задаваемые вопросы от беженцев</div>
-                        <div class="cell">
-                            <a href="https://www.gov.pl/web/udsc/-------" target="_blank">https://www.gov.pl/web/udsc/-------</a>
-                        </div>
-                    </div>
-                    <div class="row yellow">
-                        <div class="cell text-start">Условия пребывания в стране</div>
-                        <div class="cell">
-                            Всем тем, кто выезжает из Украины от вооруженного конфликта, не нужно регистрироваться в пунктах приёма иностранцев и думать об оформлении нужных документов. Все те, кто убегает с Украины, ища прибежища в Польше, не должны бояться того, что их пребывание будет считаться нелегальным. В ближайшие дни не нужно подавать никаких заявлений и прошений в: Управление по делам иностранцев: Воеводские управления; комендатуру Пограничной службы. Это же касается граждан Украины, уже пребывающих в Польше, чьи документы, дающие право на пребывание и проживание, уже недействительны.
-                        </div>
-                    </div>
-                    <div class="row yellow">
-                        <div class="cell text-start">Условия пересечения границы</div>
-                        <div class="cell">"На текущий момент для пересечения границы Польши необходимы только документы подтвержающие личность. Подходят Национальный пасспорт, Свидетельство о рождении, Заграничный Паспорт.
-                            В течении ближайших 10-15 дней будет обновлено законодательство и станут понятны процедуры подачи документов на беженство.
-                            После пересечения границы пребывание возможно в любом городе Польши."</div>
-                    </div>
-                    <div class="row yellow">
-                        <div class="cell text-start">Волонтерский центр помощи иностранцам</div>
-                        <div class="cell">
-                            <a href="https://ocalenie.org.pl/centr-pomosci-inostrancam" target="_blank">https://ocalenie.org.pl/centr-pomosci-inostrancam</a>
+
+
+
+    {{ range $key, $value:= (index .Site.Data .Site.Language.Lang).countries }}
+        <div class="container country-block white-block">
+            <div>
+                <a name="{{$key}}"></a>
+                <h3>{{ $value.title }}</h3>
+                <div class="date">
+                    <span>{{.Site.Params.DateTitle}}: {{$value.date}}</span>
+                </div>
+                <div class="table-responsive">
+                    <div class="table text-start">
+                        <div class="tbody">
+                            {{ range $row:= $value.shure }}
+                            <div class="row green">
+                                <div class="cell text-start">{{$row.title}}</div>
+                                <div class="cell">
+                                    {{ range $description:= $row.descriptions }}
+                                    <p>{{$description}}</p>
+                                    {{ end }}
+
+                                    {{ range $link:= $row.links }}
+                                    <a href="{{$link}}" target="_blank">{{$link}}</a>
+                                    {{ end }}
+                                </div>
+                            </div>
+                            {{end}}
+                            {{ range $row:= $value.tocheck }}
+                            <div class="row yellow">
+                                <div class="cell text-start">{{$row.title}}</div>
+                                <div class="cell">
+                                    {{ range $description:= $row.descriptions }}
+                                    <p>{{$description}}</p>
+                                    {{ end }}
+
+                                    {{ range $link:= $row.links }}
+                                    <a href="{{$link}}" target="_blank">{{$link}}</a>
+                                    {{ end }}
+                                </div>
+                            </div>
+                            {{end}}
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-<div class="container country-block white-block">
-    <div>
-        <a name="latvia"></a>
-        <h3>Латвия</h3>
-        <div class="date">
-            <span>Дата актуализации: 04.03.2022</span>
-        </div>
-        <div class="table-responsive">
-            <div class="table text-start">
-                <div class="tbody">
-                    <div class="row green">
-                        <div class="cell text-start">Управления делами гражданства и миграции</div>
-                        <div class="cell">
-                            <p>Узнать подробнее о порядке оформления долгосрочной визы для граждан Украины можно по телефону:</p>
-                            <p>+371 67209400 (понедельник – четверг 8:30–16:00; Пятница 9:00–15:00)</p>
-                            <p><a href="https://www.pmlp.gov.lv/en" target="_blank">https://www.pmlp.gov.lv/en</a></p>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Латвийский центр по правам человека</div>
-                        <div class="cell">
-                            <p>Латвийский центр по правам человека, который помогает просителям убежища.</p>
-                            <p><a href="mailto:office@humanrights.org.lv" target="_blank">office@humanrights.org.lv</a></p>
-                            <p><a href="https://www.facebook.com/LCHRLCC" target="_blank">https://www.facebook.com/LCHRLCC</a></p>
-                            <p><a href="http://www.cilvektiesibas.org.lv/en/" target="_blank">http://www.cilvektiesibas.org.lv/en/</a></p>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Телефоны полиции по городам </div>
-                        <div class="cell">
-                            <p>Рига: 67037811</p>
-                            <p>Вентспилс: 28680808, 63680808 или 63622934</p>
-                            <p>Телефоны отделений в других городах можно получить позвонив в одно из вышеперечисленных отделений</p>
-                        </div>
-                    </div>
-                    <div class="row yellow">
-                        <div class="cell text-start">Условия пересечения границы</div>
-                        <div class="cell">
-                            <p>На текущий момент для пересечения границы Польши необходимы только документы подтверждающие личность. Подходят Национальный паспорт, Свидетельство о рождении, Заграничный Паспорт.</p>
-                        </div>
-                    </div>
-                    <div class="row yellow">
-                        <div class="cell text-start">Помощь в транспортировке из Украины в Латвию</div>
-                        <div class="cell">
-                            <a href="https://www.ukraine-latvia.com/" alt="" target="_blank">https://www.ukraine-latvia.com/</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container country-block white-block">
-    <div>
-        <a name="austria"></a>
-        <h3>Австрия</h3>
-        <div class="date">
-            <span>Дата актуализации: 02.03.2022</span>
-        </div>
-        <div class="table-responsive">
-            <div class="table text-start">
-                <div class="tbody">
-                    <div class="row green">
-                        <div class="cell text-start">Брошюра для мигрантов от правительства Австрии</div>
-                        <div class="cell">
-                            <p><a href="https://www.bfa.gv.at/402/start.aspx" target="_blank">https://www.bfa.gv.at/402/start.aspx</a></p>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Консультации и помощь от организации по защите людей UNHCR</div>
-                        <div class="cell">
-                            <a href="https://help.unhcr.org/austria/where-to-seek-help/" target="_blank">https://help.unhcr.org/austria/where-to-seek-help/</a>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Чаты для беженцев</div>
-                        <div class="cell">
-                            <p>
-                                <a href="https://t.me/ukraineat" target="_blank">https://t.me/ukraineat</a>
-                            </p>
-                            <p>
-                                <a href="https://t.me/austriaukr" target="_blank">https://t.me/austriaukr</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row yellow">
-                        <div class="cell text-start">Условия пересечения границы</div>
-                        <div class="cell">Уточняется</div>
-                    </div>
-                    <div class="row yellow">
-                        <div class="cell text-start">Бесплатная юридическая консультация для беженцев в Вене</div>
-                        <div class="cell">
-                            <a href="https://www.caritas-stpoelten.at/" target="_blank">https://www.caritas-stpoelten.at/</a>
-                        </div>
-                    </div>
-                    <div class="row yellow">
-                        <div class="cell text-start">Дополнительная информация:</div>
-                        <div class="cell">
-                            <p>Приют в Австрии</p>
-                            <p>Шаги:</p>
-                            <p>1) Найдите офицера полиции или отделение полиции – НЕ пограничника. Оформите заявление о предоставлении убежища. Полиция примет основные данные: имя, национальность и т.д.</p>
-                            <p>2) Вас приведут в специальное отделение полиции, где проведут интервью. (Процесс будет длиться максимум 48 часов)</p>
-                            <p>Будут узнавать: основное о вас, причинах, вашем пути.</p>
-                            <p>Важно: говорить правду, ВСЕ будет проверяться. У вас примут ваш телефон для проверки правдивости вашей информации и о вашем пути. Также с вас примут до 840 Евро.</p>
-                            <p>Узнайте в полиции, что вам делать дальше и об адресе, дате и времени вашего интервью в BFA (БФА)!</p>
-                            <p>3) Полиция передаст ваши данные в Federal Office for Immigration and Asylum (BFA). Там проверят ваш случай и примут решение о придании вам статуса ""Беженца"". Также будет проведен медицинский опыт.</p>
-                            <p>Что говорить полиции на первом этапе:</p>
-                            <p>*Советуем сразу показать ваш Украинский паспорт, чтобы вас скорее поняли.</p>
-                            <p>Английский: Hello, I arrived from Ukraine. I fled to Austria from war. Я нуждаюсь в опасении.</p>
-                            <p>Хелоу, да аррайвд фром Юкрейн. Ай флед ту Аустриа фром вор. Ай нигде не рефьюдж.</p>
-                            <br />
-                            <p>Немецкий: Их bin aus der Ukraine angekommen. Ich bin vor dem Krieg nach Österreich geflohen. Ich brauche ein Asyl.</p>
-                            <p>Их бин аус дер Украине ангекоммен. Их бин фор дем лед нах Остеррайх гефлоен. Их браухе айн Азил.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container country-block white-block">
-    <div>
-        <a name="spain"></a>
-        <h3>Испания</h3>
-        <div class="date">
-            <span>Дата актуализации: 02.03.2022</span>
-        </div>
-
-        <div class="table-responsive">
-            <div class="table text-start">
-                <div class="tbody">
-                    <div class="row green">
-                        <div class="cell text-start">Сайт национальной полиции, которая занимается первичным собеседованиями с иностранцами.</div>
-                        <div class="cell">
-                            <a href="https://www.policia.es/_es/extranjeria_asilo_y_refugio.php" target="_blank">https://www.policia.es/_es/extranjeria_asilo_y_refugio.php</a>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Список центров беженцев</div>
-                        <div class="cell">
-                            <a href="https://extranjeros.inclusion.gob.es/es/proteccionasilo/car/index.html" target="_blank">https://extranjeros.inclusion.gob.es/es/proteccionasilo/car/index.html</a>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Международная организация, которая собрала информацию воедино и публикует адреса своих центров в том числе</div>
-                        <div class="cell">
-                            <a href="https://www.acnur.org/es-es/el-asilo-en-espana.html" target="_blank">https://www.acnur.org/es-es/el-asilo-en-espana.html</a>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Служба по делам иностранцев</div>
-                        <div class="cell">
-                            <a href="https://extranjeros.inclusion.gob.es/es/ProteccionAsilo/index.html" target="_blank">https://extranjeros.inclusion.gob.es/es/ProteccionAsilo/index.html</a>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Важная информация:</div>
-                        <div class="cell">
-                            <p>1. Не подавать документы на статус «беженца» прямо сейчас.</p>
-                            <p>3. 03.22 планируется заседание правительства Испании по упрощению процедуры для украинцев, после – будет понятнее и проще.</p>
-                            <p>2. Если нечего есть/одеть – идите к Красному кресту (Cruz roja – погуглите адрес в вашем городе)</p>
-                            <p>3. Если нигде ночевать – после 19:30 идите в Policía LOCAL и просите помощи, вас на улице не оставят.</p>
-                            <p>Можно обратиться в центр миграционной службы в вашем городе в Испании (Centro de atención a la inmigración) и они помогут с жильем</p>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Чаты для беженцев</div>
-                        <div class="cell">
-                            <p>
-                                <a href="https://t.me/infohelpBCN" target="_blank">https://t.me/infohelpBCN</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row yellow">
-                        <div class="cell text-start">Условия пересечения границы</div>
-                        <div class="cell">Уточняется</div>
-                    </div>
-                    <div class="row yellow">
-                        <div class="cell text-start">Благотворительная организация под патронатом Католической церкви, которая организовывает помощь беженцам из Украины</div>
-                        <div class="cell">
-                            <a href="https://www.caritas.es/emergencias/caritas-con-ucrania/" target="_blank">https://www.caritas.es/emergencias/caritas-con-ucrania/</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container country-block white-block">
-    <div>
-        <a name="germany"></a>
-        <h3>Германия</h3>
-        <div class="date">
-            <span>Дата актуализации: 02.03.2022</span>
-        </div>
-
-        <div class="table-responsive">
-            <div class="table text-start">
-                <div class="tbody">
-                    <div class="row green">
-                        <div class="cell text-start">Вопросы и ответы о въезде из Украины и пребывании в Германии от федерального ведомства по вопросам миграции и беженцев</div>
-                        <div class="cell">
-                            <a href="https://www.bamf.de/DE/Startseite/startseite_node.html;jsessionid=3C4EC2F4D8F0BD3A19F76261EB74ED89.internet281" target="_blank">https://www.bamf.de/DE/Startseite/startseite_node.html;jsessionid=3C4EC2F4D8F0BD3A19F76261EB74ED89.internet281</a>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Официальный портал федерального ведомства по вопросам миграции и беженцев на украинском</div>
-                        <div class="cell">
-                            <a href="https://www.bamf.de/SharedDocs/Anlagen/DE/AsylFluechtlingsschutz/faq-ukraine.html" target="_blank">https://www.bamf.de/SharedDocs/Anlagen/DE/AsylFluechtlingsschutz/faq-ukraine.html</a>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Официальный портал города Берлин по беженству</div>
-                        <div class="cell">
-                            <a href="https://www.berlin.de/willkommenszentrum/ankommen/einreise/" target="_blank">https://www.berlin.de/willkommenszentrum/ankommen/einreise/</a>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Официальный портал города Дортмунд по беженству</div>
-                        <div class="cell">
-                            <a href="https://gefluechtete-dortmund.de/thema-flucht/weg-des-fluechtlings/?fbclid=IwAR33HCznowqdQfK4nhGP41AJ3AMNlwA33fNiwE8UYWX3Z0-nUNQY9NOKePI" target="_blank">https://gefluechtete-dortmund.de/thema-flucht/weg-des-fluechtlings/?fbclid=IwAR33HCznowqdQfK4nhGP41AJ3AMNlwA33fNiwE8UYWX3Z0-nUNQY9NOKePI</a>
-                        </div>
-                    </div>
-                    <div class="row green">
-                        <div class="cell text-start">Чаты для беженцев</div>
-                        <div class="cell">
-                            <p>
-                                <a href="https://t.me/+ZM7gZZfM8Wc2YWM6" target="_blank">https://t.me/+ZM7gZZfM8Wc2YWM6</a>
-                            </p>
-                            <p>
-                                <a href="https://t.me/germanyhelpsukraine" target="_blank">https://t.me/germanyhelpsukraine</a>
-                            </p>
-                            <br />
-                            <p>Города Германии:</p>
-                            <p>- Берлин: <a href="https://t.me/+Mx6WD9KWQzQ4ZTVi" target="_blank">https://t.me/+Mx6WD9KWQzQ4ZTVi</a></p>
-                            <p>- Штутгарт: <a href="https://t.me/helpforukraine22" target="_blank">https://t.me/helpforukraine22</a></p>
-                            <p>– Нюрнберг: <a href="https://t.me/help_in_Nuremberg_UA" target="_blank">https://t.me/help_in_Nuremberg_UA</a></p>
-                            <p>- Кельн: <a href="https://t.me/cologne_help" target="_blank">https://t.me/cologne_help</a></p>
-                            <p>- Хайльбронн (Heilbronn): <a href="https://t.me/+zc9HnLCyckMzMGRi" target="_blank">https://t.me/+zc9HnLCyckMzMGRi</a></p>
-                        </div>
-                    </div>
-                    <div class="row yellow">
-                        <div class="cell text-start">Условия пересечения границы</div>
-                        <div class="cell">Уточняется</div>
-                    </div>
-                    <div class="row yellow">
-                        <div class="cell text-start">Дополнительная информация:</div>
-                        <div class="cell">
-                            <p>Ваш первый пункт назначения – это «первичный пункт приема беженцев», Landeserstaufnahmeeinrichtung für Flüchtlinge NRW.</p>
-                            <p>Там вас оформляют, предоставляют место во временном общежитии (их шесть, разбросаны по разным городам), и отвозят туда на автобусе. С этого момента вы перестаете быть нелегалом* (сноска в первом комментарии) и становитесь Asylsuchende – беженцем.</p>
-                            <br />
-                            <p>Адрес этого учреждения:</p>
-                            <p>Gersteinring 52, 44791 Bochum, Germany</p>
-                            <br />
-                            <p>Вы приезжаете на вокзал г. Бохум (станция Bochum Hbf – Bochum Hauptbahnhof), выходите из центрального выхода, это который в сторону первого пути (Gleis 1). Выход из вокзала на первом фото справа, закрыт белой палаткой. Поворачиваете направо и проходите десять шагов до автобусного терминала (в левой части фото). С «платформы» № 4 отправляется автобус № 354, следующий в Bochum Zillertal, который через 3 остановки и ровно 5 минут доставит вас на остановку Gersteinring.</p>
-                            <p>Там проходим сотню метров по ходу следования автобуса, сворачиваем направо, второй дом по левую руку будет нужным учреждением.</p>
-                            <br />
-                            <p>Если заблудитесь или не сможете объясниться с кем угодно где угодно, мне можно позвонить по телефону +4915733678678 или whatsapp +79037475910 с 9 утра до полуночи.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
+    {{ end }}
 
 {{ end }}

@@ -8,7 +8,7 @@
         </a>
 
         <ul class="nav main-nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            {{ range $key, $value:= (index .Site.Data .Site.Language.Lang) }}
+            {{ range $key, $value:= (index .Site.Data .Site.Language.Lang).countries }}
                  <li><a href="#{{ $key  }}" class="nav-link px-2 link-dark">{{ $value.country }}</a></li>
             {{ end }}
         </ul>
@@ -24,10 +24,10 @@
             </a>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
-                {{ range $key, $value:= (index .Site.Data .Site.Language.Lang) }}
+                {{ range $key, $value:= (index .Site.Data .Site.Language.Lang).countries }}
                     <li class="nav-item">
                         <a href="#{{ $key }}" class="nav-link link-dark" aria-current="page">
-                            <img src="{{ $key }}" alt=""/>
+                            <img src="/img/{{ $key }}.png" alt=""/>
                             <span>{{ $value.country }}</span>
                         </a>
                     </li>
