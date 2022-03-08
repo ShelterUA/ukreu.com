@@ -78,7 +78,7 @@
                 <a name="{{$key}}"></a>
                 <h3>{{ $value.title }}</h3>
                 <div class="date">
-                    <span>{{.Site.Params.DateTitle}}: {{$value.date}}</span>
+                    <span>{{ $.Site.Params.DateTitle }}: {{$value.date}}</span>
                 </div>
                 <div class="table-responsive">
                     <div class="table text-start">
@@ -125,9 +125,9 @@
         <div class="container country-block white-block">
             <div>
                 <a name="{{$key}}"></a>
-                <h3>{{ $value.title }}</h3>
+                <h3>{{ $value.country }}</h3>
                 <div class="date">
-                    <span>{{.Site.Params.DateTitle}}: {{$value.date}}</span>
+                    <span>{{ $.Site.Params.DateTitle }}: {{$value.date}}</span>
                 </div>
                 <div class="table-responsive">
                     <div class="table text-start">
