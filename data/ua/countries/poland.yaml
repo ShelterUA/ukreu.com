@@ -35,6 +35,11 @@ shure:
       - 'Міністерство освіти та науки.'
     links:
       - 'https://rspo.gov.pl'
+  - title: 'Порадник для українських мам.'
+    descriptions:
+      - '«Ласкаво просимо до Польщі!» - безкоштовний путівник «Wyborcza» для мам з України'
+    links:
+      - 'https://wyborcza.pl/7,75398,28192990,witamy-w-polsce-bezplatny-poradnik-wyborczej-dla-matek.html'
 tocheck:
   -
     title: 'Умови перебування в країні'
