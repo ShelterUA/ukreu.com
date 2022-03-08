@@ -1,16 +1,15 @@
-title: 'maps'
+title: 'Інтерактивні карти допомоги'
 shure:
   -
-    title: ''
+    title: 'Пошук житла для українських біженців в Європі (I can help)'
     descriptions:
       - ''
     links:
-      - ''
-tocheck:
+      - 'https://icanhelp.host/'
   -
-    title: ''
+    title: 'Різностороння допомога Українським біженцям у Європі: житло, психолог, їжа, одяг тощо. (Mapa help)'
     descriptions:
       - ''
     links:
-      - ''
+      - 'https://mapahelp.me/'
 

@@ -1,16 +1,69 @@
 country: 'Німеччина'
 shure:
   -
-    title: ''
+    title: "Запитання та відповіді про в'їзд з України та перебування в Німеччині від федерального відомства з питань міграції та біженців"
     descriptions:
       - ''
     links:
-      - ''
-tocheck:
+      - 'https://www.bamf.de/DE/Startseite/startseite_node.html;jsessionid=3C4EC2F4D8F0BD3A19F76261EB74ED89.internet281'
   -
-    title: ''
+    title: 'Офіційний портал федерального відомства з питань міграції та біженців українською'
     descriptions:
       - ''
+    links:
+      - 'https://www.bamf.de/SharedDocs/Anlagen/DE/AsylFluechtlingsschutz/faq-ukraine.html'
+  -
+    title: 'Офіційний портал міста Берлін з біженства'
+    descriptions:
+      - ''
+    links:
+      - 'https://www.berlin.de/willkommenszentrum/ankommen/einreise/'
+  -
+    title: 'Офіційний портал міста Дортмунд з біженства'
+    descriptions:
+      - ''
+    links:
+      - 'https://gefluechtete-dortmund.de/thema-flucht/weg-des-fluechtlings/?fbclid=IwAR33HCznowqdQfK4nhGP41AJ3AMNlwA33fNiwE8UYWX3Z0-nUNQY9NOKePI'
+  -
+    title: 'Чати для біженців'
+    descriptions:
+      - 'Міста Німеччини:
+
+         - Берлін: https://t.me/+Mx6WD9KWQzQ4ZTVi
+
+         - Штутгарт: https://t.me/helpforukraine22
+
+         – Нюрнберг: https://t.me/help_in_Nuremberg_UA
+
+         - Кельн: https://t.me/cologne_help
+
+         - Хайльбронн (Heilbronn): https://t.me/+zc9HnLCyckMzMGRi'
+    links:
+      - 'https://t.me/+ZM7gZZfM8Wc2YWM6'
+      - 'https://t.me/germanyhelpsukraine'
+tocheck:
+  -
+    title: 'Умови перетину кордону'
+    descriptions:
+      - 'Уточнюється'
+    links:
+      - ''
+  -
+    title: 'Важлива інформація:'
+    descriptions:
+      - "Ваш перший пункт призначення - це 'первинний пункт прийому біженців', Landeserstaufnahmeeinrichtung für Flüchtlinge NRW.
+          
+          Там вас оформляють, надають місце у тимчасовому гуртожитку (їх шість, розкидані по різних містах), та відвозять туди автобусом. З цього моменту ви перестаєте бути нелегалом* (виноска у першому коментарі) і стаєте Asylsuchende – біженцем.
+          
+          
+          Адреса цієї установи:
+          
+          Gersteinring 52, 44791 Bochum, Німеччина
+          
+          
+          Ви приїжджаєте на вокзал м. Бохум (станція Bochum Hbf – Bochum Hauptbahnhof), виходьте з центрального виходу, який в бік першого шляху (Gleis 1). Вихід із вокзалу на першому фото праворуч, закритий білим наметом. Повертаєте праворуч і проходьте десять кроків до автобусного терміналу (ліворуч фото). З «платформи» №4 відправляється автобус №354, що прямує в Bochum Zillertal, який через 3 зупинки і рівно 5 хвилин доставить вас на зупинку Gersteinring.
+          
+          Там проходимо сотню метрів по ходу автобуса, повертаємо направо, другий будинок по ліву руку буде потрібною установою."
     links:
       - ''
 

@@ -1,16 +1,60 @@
 country: 'Испания'
 shure:
   -
-    title: ''
+    title: 'Сайт национальной полиции, которая занимается первичным собеседованиями с иностранцами.'
     descriptions:
       - ''
     links:
+      - 'https://www.policia.es/_es/extranjeria_asilo_y_refugio.php'
+  -
+    title: 'Список центров беженцев	'
+    descriptions:
       - ''
+    links:
+      - 'https://extranjeros.inclusion.gob.es/es/proteccionasilo/car/index.html'
+  -
+    title: 'Международная организация, которая собрала информацию воедино и публикует адреса своих центров в том числе'
+    descriptions:
+      - ''
+    links:
+      - 'https://www.acnur.org/es-es/el-asilo-en-espana.html'
+  -
+    title: 'Служба по делам иностранцев'
+    descriptions:
+      - ''
+    links:
+      - 'https://extranjeros.inclusion.gob.es/es/ProteccionAsilo/index.html'
+  -
+    title: 'Важная информация:'
+    descriptions:
+      - '1. Не подавать документы на статус «беженца» прямо сейчас.
+
+         3. 03.22 планируется заседание правительства Испании по упрощению процедуры для украинцев, после – будет понятнее и проще.
+
+         2. Если нечего есть/одеть – идите к Красному кресту (Cruz roja – погуглите адрес в вашем городе)
+
+         3. Если нигде ночевать – после 19:30 идите в Policía LOCAL и просите помощи, вас на улице не оставят.
+
+         Можно обратиться в центр миграционной службы в вашем городе в Испании (Centro de atención a la inmigración) и они помогут с жильем'
+    links:
+      - ''
+  -
+    title: 'Чаты для беженцев'
+    descriptions:
+      - ''
+    links:
+      - 'https://t.me/infohelpBCN'
 tocheck:
   -
-    title: ''
+    title: 'Условия пересечения границы'
+    descriptions:
+      - 'Уточняется'
+    links:
+      - ''
+  -
+    title: 'Благотворительная организация под патронатом Католической церкви, которая организовывает помощь беженцам из Украины'
     descriptions:
       - ''
     links:
-      - ''
+      - 'https://www.caritas.es/emergencias/caritas-con-ucrania/'
 

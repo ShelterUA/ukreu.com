@@ -1,0 +1,21 @@
+country: 'Норвегія'
+shure:
+  -
+    title: 'Інформація від міністерства міграції для українців'
+    descriptions:
+      - ''
+    links:
+      - 'https://www.udi.no/viktige-meldinger/informasjon-om-situasjonen-i-ukraina/#link-30021'
+  -
+    title: 'Організація допомоги біженцям у Норвегії'
+    descriptions:
+      - ''
+    links:
+      - 'https://www.unhcr.org/neu/no/informasjon-for-flyktninger-og-asylsokere'
+  -
+    title: 'Адвокатська фірма надає безкоштовні юридичні консультації для біженців в Україні'
+    descriptions:
+      - ''
+    links:
+      - 'https://www.schjodt.no/en/news--events/news/free-helpline-for-refugees-from-ukraine/'
+
