@@ -48,7 +48,7 @@
             <p>Ми будемо вносити зміни максимально оперативно, дякуємо за допомогу!</p>
         </div>
     {{ else }}
-        <div class="container additional-block white-block">
+        <div class="container additional-block white-block extras">
             <div>
                 <div class="date">
                     <span>{{.Site.Params.DateTitle}}: 05.03.2022</span>
@@ -59,12 +59,12 @@
             </div>
         </div>
 
-        <div class="container telegram">
+        <div class="container telegram extras">
             <p>Чтобы получать информацию о обновлениях на нашем сайте</p>
             <p>подписуйтесь на телеграм канал <a href="https://t.me/ukreucom" target="_blank">https://t.me/ukreucom</a></p>
         </div>
 
-        <div class="container mail">
+        <div class="container mail extras">
             <p>Если вы обнаружили ошибку, или информация не полная - оставляйте свои комментарии по адресу <a href="mailto:ukreucom@gmail.com" target="_blank">ukreucom@gmail.com</a></p>
             <p>Мы будем вносить изменения максимально оперативно, спасибо за помощь!</p>
         </div>
@@ -91,8 +91,12 @@
                                             <p>{{$description}}</p>
                                         {{ end }}
 
+                                        {{ range $phone:= $row.phones }}
+                                            <p><a href="tel:{{$phone}}">{{$phone}}</a></p>
+                                        {{ end }}
+
                                         {{ range $link:= $row.links }}
-                                            <a href="{{$link}}" target="_blank">{{$link}}</a>
+                                            <p><a href="{{$link}}" target="_blank">{{$link}}</a></p>
                                         {{ end }}
                                     </div>
                                 </div>
@@ -102,11 +106,15 @@
                                     <div class="cell text-start">{{$row.title}}</div>
                                     <div class="cell">
                                         {{ range $description:= $row.descriptions }}
-                                        <p>{{$description}}</p>
+                                            <p>{{$description}}</p>
+                                        {{ end }}
+
+                                        {{ range $phone:= $row.phones }}
+                                            <p><a href="tel:{{$phone}}">{{$phone}}</a></p>
                                         {{ end }}
 
                                         {{ range $link:= $row.links }}
-                                        <a href="{{$link}}" target="_blank">{{$link}}</a>
+                                            <p><a href="{{$link}}" target="_blank">{{$link}}</a></p>
                                         {{ end }}
                                     </div>
                                 </div>
@@ -137,11 +145,15 @@
                                 <div class="cell text-start">{{$row.title}}</div>
                                 <div class="cell">
                                     {{ range $description:= $row.descriptions }}
-                                    <p>{{$description}}</p>
+                                        <p>{{$description}}</p>
+                                    {{ end }}
+
+                                    {{ range $phone:= $row.phones }}
+                                        <p><a href="tel:{{$phone}}">{{$phone}}</a></p>
                                     {{ end }}
 
                                     {{ range $link:= $row.links }}
-                                    <a href="{{$link}}" target="_blank">{{$link}}</a>
+                                        <p><a href="{{$link}}" target="_blank">{{$link}}</a></p>
                                     {{ end }}
                                 </div>
                             </div>
@@ -151,11 +163,15 @@
                                 <div class="cell text-start">{{$row.title}}</div>
                                 <div class="cell">
                                     {{ range $description:= $row.descriptions }}
-                                    <p>{{$description}}</p>
+                                        <p>{{$description}}</p>
+                                    {{ end }}
+
+                                    {{ range $phone:= $row.phones }}
+                                        <p><a href="tel:{{$phone}}">{{$phone}}</a></p>
                                     {{ end }}
 
                                     {{ range $link:= $row.links }}
-                                    <a href="{{$link}}" target="_blank">{{$link}}</a>
+                                        <p><a href="{{$link}}" target="_blank">{{$link}}</a></p>
                                     {{ end }}
                                 </div>
                             </div>
