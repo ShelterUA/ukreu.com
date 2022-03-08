@@ -25,23 +25,6 @@ shure:
       - ''
     links:
       - 'https://gefluechtete-dortmund.de/thema-flucht/weg-des-fluechtlings/?fbclid=IwAR33HCznowqdQfK4nhGP41AJ3AMNlwA33fNiwE8UYWX3Z0-nUNQY9NOKePI'
-  -
-    title: 'Чати для біженців'
-    descriptions:
-      - 'Міста Німеччини:
-
-         - Берлін: https://t.me/+Mx6WD9KWQzQ4ZTVi
-
-         - Штутгарт: https://t.me/helpforukraine22
-
-         – Нюрнберг: https://t.me/help_in_Nuremberg_UA
-
-         - Кельн: https://t.me/cologne_help
-
-         - Хайльбронн (Heilbronn): https://t.me/+zc9HnLCyckMzMGRi'
-    links:
-      - 'https://t.me/+ZM7gZZfM8Wc2YWM6'
-      - 'https://t.me/germanyhelpsukraine'
 tocheck:
   -
     title: 'Чати для біженців'

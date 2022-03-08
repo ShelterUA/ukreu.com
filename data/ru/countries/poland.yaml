@@ -30,6 +30,11 @@ shure:
       - ''
     links:
       - 'https://www.gov.pl/web/udsc/-------'
+  - title: 'Поиск школ и учебных заведений для детей беженцев.'
+    descriptions:
+      - 'Министерство образования и науки.'
+    links:
+      - 'https://rspo.gov.pl'
 tocheck:
   -
     title: 'Условия пребывания в стране'
