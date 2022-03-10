@@ -7,6 +7,11 @@ shure:
       - ''
     links:
       - 'https://www.policia.es/_es/extranjeria_asilo_y_refugio.php'
+  - title: 'Офіційний бюлетень для українських біженців від Міністерства інтеграції, соціального захисту та міграції'
+    descriptions:
+      - ''
+    links:
+      - 'https://www.extranjeriamurcia.com/_files/ugd/8f5eca_bc505da45e06476db3b92a75ed326915.pdf'
   -
     title: 'Список центрів біженців'
     descriptions:
@@ -19,12 +24,27 @@ shure:
       - ''
     links:
       - 'https://www.acnur.org/es-es/el-asilo-en-espana.html'
+  - title: 'Державний портал для біженців у регіоні Murcia'
+    descriptions:
+      - 'Інформація про міжнародний захист сімей або неповнолітніх, порушених збройним конфліктом в Україні. Найближчим часом на сайт буде додано можливість подання онлайн заяв.'
+    links:
+      - 'https://sede.carm.es/web/pagina?IDCONTENIDO=3840&IDTIPO=240'
   -
     title: 'Служба у справах іноземців'
     descriptions:
       - ''
     links:
       - 'https://extranjeros.inclusion.gob.es/es/ProteccionAsilo/index.html'
+  - title: 'Пошук роботи.'
+    descriptions:
+        - 'Портал пошуку роботи по всій Іспанії.'
+    links:
+        - 'https://www.infojobs.net'
+  - title: ''
+    descriptions:
+        - 'Портал пошуку роботи для IT спеціалістів.'
+    links:
+        - 'https://www.tecnoempleo.com'
   -
     title: 'Важлива інформація:'
     descriptions:
