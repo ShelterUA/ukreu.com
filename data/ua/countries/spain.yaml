@@ -2,6 +2,14 @@ country: 'Іспанія'
 date: '02.03.2022'
 shure:
   -
+    title: 'На території Іспанії відкрито цілодобову гарячу лінію для українців'
+    descriptions:
+      - ''
+    phones:
+      - '+34 910 474 444'
+    links:
+      - 'https://www.inclusion.gob.es/uk/ucrania/index.htm'
+  -
     title: 'Сайт національної поліції, яка опікується первинними співбесідами з іноземцями.'
     descriptions:
       - ''
