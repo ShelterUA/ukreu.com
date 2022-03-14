@@ -1,6 +1,22 @@
 country: 'Польща'
-date: '08.03.2022'
+date: '14.03.2022'
 shure:
+  -
+    title: 'Спеціальний закон для громадян України'
+    descriptions:
+      - 'Закон опубліковано на порталі dziennikustaw.gov.pl'
+    phones:
+      - ''
+    links:
+      - 'https://dziennikustaw.gov.pl/D2022000058301.pdf'
+  -
+    title: ''
+    descriptions:
+      - "Роз'яснення спеціального закону для українців: пільгова легалізація, робота без дозволів"
+    phones:
+      - ''
+    links:
+      - 'https://poland-consult.com/eu/pl/uchodzcy/trehletnyaya-zaschita.html'
   -
     title: 'Гаряча лінія для біженців'
     descriptions:
@@ -47,6 +63,11 @@ shure:
       - 'https://lang-psz.praca.gov.pl/uk/'
   - title: ''
     descriptions:
+      - 'Робота у Польщі. Усі послуги безкоштовні.'
+    links:
+      - 'https://profi-personal.com.ua/category/job/'
+  - title: ''
+    descriptions:
       - 'Безкоштовні портали пошуку роботи:'
     links:
       - 'https://www.pracuj.pl/'
@@ -56,6 +77,12 @@ shure:
       - 'https://www.gowork.pl/'
       - 'https://www.aplikuj.pl/'
 tocheck:
+  -
+    title: 'Пошук житла у Польщі'
+    descriptions:
+      - 'Портал Polityka prywatności / Політика конфіденційності'
+    links:
+      - 'https://grupazasoby.pl/privacy'
   -
     title: 'Умови перебування в країні'
     descriptions:
