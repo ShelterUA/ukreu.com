@@ -76,6 +76,11 @@ shure:
       - 'https://www.gumtree.pl/'
       - 'https://www.gowork.pl/'
       - 'https://www.aplikuj.pl/'
+  - title: 'Перелiк присяжних перекладачів'
+    descriptions:
+      - ''
+    links:
+      - 'https://arch-bip.ms.gov.pl/pl/rejestry-i-ewidencje/tlumacze-przysiegli/lista-tlumaczy-przysieglych/list.html?City=Warszawa&Language=3'
 tocheck:
   -
     title: 'Пошук житла у Польщі'
