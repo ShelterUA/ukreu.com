@@ -1,5 +1,5 @@
 title: 'Інтерактивні карти допомоги'
-date: '04.03.2022'
+date: '14.03.2022'
 shure:
   -
     title: 'Пошук житла для українських біженців в Європі (I can help)'
@@ -13,4 +13,15 @@ shure:
       - ''
     links:
       - 'https://mapahelp.me/'
-
+  -
+    title: 'Житло для українських біженців (UKRAINE TAKE SHELTER)'
+    descriptions:
+      - ''
+    links:
+      - 'https://www.ukrainetakeshelter.com'
+  -
+    title: 'Пошук тимчасового житла у готелях (hospitality helps)'
+    descriptions:
+      - ''
+    links:
+      - 'https://hospitality-helps.org'

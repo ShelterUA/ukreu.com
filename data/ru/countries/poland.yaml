@@ -1,14 +1,22 @@
 country: 'Польша'
-date: '08.03.2022'
+date: '14.03.2022'
 shure:
   -
-    title: 'Горячая линия для Беженцев'
+    title: 'Специальный закон для граждан Украины'
     descriptions:
-      - ''
+      - 'Закон опубликован на портале dziennikustaw.gov.pl'
     phones:
-      - '+48 47 721 75 75'
-    links:
       - ''
+    links:
+      - 'https://dziennikustaw.gov.pl/D2022000058301.pdf'
+  -
+    title: ''
+    descriptions:
+      - 'Разъяснение специального закона для украинцев: льготная легализация, работа без разрешений'
+    phones:
+      - ''
+    links:
+      - 'https://poland-consult.com/eu/pl/uchodzcy/trehletnyaya-zaschita.html'
   -
     title: 'Официальная помощь от государства'
     descriptions:
@@ -47,6 +55,11 @@ shure:
       - 'https://lang-psz.praca.gov.pl/uk/'
   - title: ''
     descriptions:
+      - 'Работа в Польше. Все услуги бесплатные.'
+    links:
+      - 'https://profi-personal.com.ua/category/job/'
+  - title: ''
+    descriptions:
       - 'Бесплатные порталы поиска работы:'
     links:
       - 'https://www.pracuj.pl/'
@@ -56,6 +69,12 @@ shure:
       - 'https://www.gowork.pl/'
       - 'https://www.aplikuj.pl/'
 tocheck:
+  -
+    title: 'Поиск жилья в Польше'
+    descriptions:
+      - 'Grupa zasoby'
+    links:
+      - 'https://grupazasoby.pl/privacy'
   -
     title: 'Условия пребывания в стране'
     descriptions:
