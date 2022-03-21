@@ -1,5 +1,5 @@
 country: 'Польща'
-date: '14.03.2022'
+date: '21.03.2022'
 shure:
   -
     title: 'Спеціальний закон для громадян України'
@@ -25,6 +25,12 @@ shure:
       - '+48 47 721 75 75'
     links:
       - ''
+  -
+    title: "Роз'яснення щодо отримання одноразової допомоги для громадян України"
+    descriptions:
+      - ''
+    links:
+      - 'https://in-poland.com/edinovremennoe-posobie-dlya-grazhdan-ukrainy/'
   -
     title: 'Офіційна допомога від польської держави'
     descriptions:
@@ -81,6 +87,11 @@ shure:
       - ''
     links:
       - 'https://arch-bip.ms.gov.pl/pl/rejestry-i-ewidencje/tlumacze-przysiegli/lista-tlumaczy-przysieglych/list.html?City=Warszawa&Language=3'
+  - title: 'Отримання номера PESEL'
+    descriptions:
+      - ''
+    links:
+      - 'https://in-poland.com/PESEL-dlya-inostrantsev-obraztsy-zayavlenij-informatsiya-po-gorodam/'
 tocheck:
   -
     title: 'Пошук житла у Польщі'
@@ -88,6 +99,18 @@ tocheck:
       - 'Портал Polityka prywatności / Політика конфіденційності'
     links:
       - 'https://grupazasoby.pl/privacy'
+  -
+    title: 'Допомога біженцям в пошуку транспорта та житла'
+    descriptions:
+      - ''
+    links:
+      - 'https://ukrainesupport.net/uk/'
+  -
+    title: 'Притулок для жертв війни в Україні'
+    descriptions:
+      - ''
+    links:
+      - 'https://uasos.org/ua'
   -
     title: 'Умови перебування в країні'
     descriptions:

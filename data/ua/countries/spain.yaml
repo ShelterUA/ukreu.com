@@ -2,6 +2,14 @@ country: 'Іспанія'
 date: '02.03.2022'
 shure:
   -
+    title: "Роз'яснення щодо статусу тимчасового захисту в Іспанії 4-ма мовами"
+    descriptions:
+      - 'Інформація про тимчасову захисту Україна березень 2022'
+    phones:
+      - ''
+    links:
+      - 'http://www.interior.gob.es/es/web/servicios-al-ciudadano/ucrania-proteccion-temporal'
+  -
     title: 'На території Іспанії відкрито цілодобову гарячу лінію для українців'
     descriptions:
       - ''
@@ -54,22 +62,18 @@ shure:
     links:
         - 'https://www.tecnoempleo.com'
   -
-    title: 'Важлива інформація:'
+    title: 'Відкриття банківського рахунку'
     descriptions:
-      - '1. Не подавати документи на статус "біженця" прямо зараз.'
-      - '02.03.22 планується засідання уряду Іспанії щодо спрощення процедури для українців, після – буде зрозуміліше та простіше.'
-      - '2. Якщо нема чого їсти/одягти – йдіть до Червоного хреста (Cruz roja – погуглить адресу у вашому місті)'
-      - '3. Якщо ніде ночувати – після 19:30 йдіть до Policía LOCAL та просіть допомоги, вас на вулиці не залишать.'
-      - 'Можна звернутися до центру міграційної служби у вашому місті в Іспанії (Centro de atención a la inmigración) і вони допоможуть з житлом'
+      - 'Рахунок ONE для біженців з України'
     links:
-      - ''
-  -
-    title: 'Чати для біженців'
+      - 'https://www.bancosantander.es/particulares/cuentas-tarjetas/cuentas-corrientes/cuenta-one-ucrania-ukr'
+
+tocheck:
+  - title: 'Чати для біженців'
     descriptions:
       - ''
     links:
       - 'https://t.me/infohelpBCN'
-tocheck:
   -
     title: 'Умови перетину кордону'
     descriptions:
