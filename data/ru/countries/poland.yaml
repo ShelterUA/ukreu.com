@@ -1,5 +1,5 @@
 country: 'Польша'
-date: '14.03.2022'
+date: '21.03.2022'
 shure:
   -
     title: 'Специальный закон для граждан Украины'
@@ -17,6 +17,12 @@ shure:
       - ''
     links:
       - 'https://poland-consult.com/eu/pl/uchodzcy/trehletnyaya-zaschita.html'
+  -
+    title: 'Разъяснение по получению единовременного пособия для граждан Украины'
+    descriptions:
+      - ''
+    links:
+      - 'https://in-poland.com/edinovremennoe-posobie-dlya-grazhdan-ukrainy/'
   -
     title: 'Официальная помощь от государства'
     descriptions:
@@ -73,6 +79,11 @@ shure:
       - ''
     links:
       - 'https://arch-bip.ms.gov.pl/pl/rejestry-i-ewidencje/tlumacze-przysiegli/lista-tlumaczy-przysieglych/list.html?City=Warszawa&Language=3'
+  - title: 'Получение номера PESEL'
+    descriptions:
+      - ''
+    links:
+      - 'https://in-poland.com/PESEL-dlya-inostrantsev-obraztsy-zayavlenij-informatsiya-po-gorodam/'
 tocheck:
   -
     title: 'Поиск жилья в Польше'
@@ -80,6 +91,18 @@ tocheck:
       - 'Grupa zasoby'
     links:
       - 'https://grupazasoby.pl/privacy'
+  -
+    title: 'Помощь беженцам в поиске транспорта и жилья'
+    descriptions:
+      - ''
+    links:
+      - 'https://ukrainesupport.net/uk/'
+  -
+    title: 'Приют для жертв войны в Украине'
+    descriptions:
+      - ''
+    links:
+      - 'https://uasos.org/ua'
   -
     title: 'Условия пребывания в стране'
     descriptions:
